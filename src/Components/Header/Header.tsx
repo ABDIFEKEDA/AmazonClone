@@ -9,7 +9,7 @@ function Header() {
       {/* Left: Logo + Delivery */}
       <div className={classes.logo_container}>
         <a href="/">
-          <img src="/amazon.jpg" alt="amazon-logo" className={classes.logo} />
+          <img src="/amazon.png" alt="amazon-logo" className={classes.logo}  />
         </a>
         <div className={classes.delivery}>
           <p>Delivered to</p>
