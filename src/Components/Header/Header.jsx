@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CiSearch } from "react-icons/ci";
 import { FaShoppingCart } from "react-icons/fa";
 import classes from './Header.module.css';
@@ -34,18 +35,18 @@ function Header() {
             <option value="en">En</option>
           </select>
         </div>
-        <a href="/signin">
+        <Link to="/signin">
           <p>Sign In</p>
           <span>Accounts & Lists</span>
-        </a>
-        <a href="/orders">
+        </Link>
+        < Link to="/orders">
           <p>Returns</p>
           <span>& Orders</span>
-        </a>
-        <a href="/cart" className={classes.cart}>
+        </ Link>
+        <Link to ="/cart" className={classes.cart}>
           <FaShoppingCart />
           <span>0</span>
-        </a>
+        </Link>
       </div>
     </header>
   );
